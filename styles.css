@@ -404,3 +404,116 @@ span{
     box-shadow: 0 0 15px var(--main-color);
     transition: transform 0.3s ease-in-out;
 }
+
+.education-box:hover, .skills-box:hover, .certification-box:hover, .publication-box:hover {
+    transform: scale(1.05);
+}
+
+.education-box h3, .publication-box h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.education-box p, .skills-box p, .certification-box p, .publication-box p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+:root {
+    --bg-color: #121212;
+    --second-bg-color: #1e1e1e;
+    --main-color: #f1c40f;
+    --text-color: #ffffff;
+    --light-main-color: rgba(241, 196, 15, 0.5);
+}
+
+
+.projects {
+    background-color: var(--bg-color);
+    color: white;
+    padding: 5rem 9%;
+}
+
+.projects h2 {
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 2rem; 
+}
+
+.project-box {
+    background-color: var(--second-bg-color);
+    color: rgba(241, 196, 15, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-info h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.project-info p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    overflow-wrap: break-word;
+}
+
+.skills {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5rem 9%;
+}
+
+.skills h2 {
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+}
+
+.skills-box {
+    background-color: var(--second-bg-color);
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+    min-width: 100px; 
+    max-width: 100px; 
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
