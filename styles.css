@@ -302,3 +302,105 @@ span{
     color: var(--main-color);
     animation: words 20s infinite;
 }
+
+.about-content .text-animation span::after{
+    content: "";
+    background-color: var(--second-bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--second-bg-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+    width: 50px;
+}
+
+.projects{
+    background-color: var(--bg-color);
+    color: white;
+}
+
+.projects h2{
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.project-box{
+    background-color: var(--main-color);
+    color: black;
+    height: 280px;
+    width: 380px;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-box:hover{
+    background: rgb(106, 90, 32);
+    color: var(--main-color);
+    transform: scale(1.03);
+}
+
+.project-box .project-info{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-height: 200px;
+    justify-content: center;
+    align-items: baseline;
+    padding: 5em;
+}
+
+.project-info h4{
+    font-size: 2.0rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.project-info p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    max-height: 100px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: auto;
+}
+
+.education, .skills, .certification, .publication {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20rem 9%;
+}
+
+.education-container, .skills-container, .certification-container, .publication-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem
+}
+
+.education-box, .skills-box, .certification-box, .publication-box {
+    background-color: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px var(--main-color);
+    transition: transform 0.3s ease-in-out;
+}
