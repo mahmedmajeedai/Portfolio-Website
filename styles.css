@@ -517,3 +517,62 @@ span{
     justify-content: center;
     font-size: 1.2rem;
 }
+
+.skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--light-main-color);
+}
+
+.skills-box p {
+    margin: 0;
+    color: rgba(241, 196, 15, 0.5);
+    word-break: break-word;
+}
+
+.certification {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5rem 9%;
+}
+
+.certification h2 {
+    margin-bottom: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.certification-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.certification-box {
+    background-color: var(--second-bg-color);
+    color: rgba(241, 196, 15, 0.5);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: center;
+}
+
+.certification-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+}
+
+.certification-box p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    overflow-wrap: break-word;
+}
+
+.certification-box a{
+    font-size: 1.4rem;
+    color: rgba(241, 196, 15, 0.5);
+    line-height: 1.6;
+    margin: 0.5rem 0;
+    overflow-wrap: break-word;
+}
