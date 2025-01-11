@@ -679,7 +679,20 @@ button.btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
 }
+.blog-hidden {
+    display: none;
+}
 
+#show-more-btn {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+}
+
+/* Add visible button when blogs exceed limit */
+.blog-container.blog-exceed #show-more-btn {
+    display: block;
+}
 .blog-box h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
