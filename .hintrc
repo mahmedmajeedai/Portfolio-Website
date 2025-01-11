@@ -14,7 +14,8 @@
       {
         "ignore": [
           "backdrop-filter",
-          "text-justify"
+          "text-justify",
+          "text-justify: inter-word"
         ]
       }
     ]

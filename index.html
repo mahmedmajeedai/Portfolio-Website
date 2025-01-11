@@ -1,248 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ahmed Portfolio</title>
-        <link rel='stylesheet' href="./styles.css">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#home" class="logo">Muhammad
-            <span>Ahmed</span></a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+        <a href="#home" class="logo">Muhammad<span>Ahmed</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#about" class="active">Home</a>
+            <a href="#education">Education</a>
+            <a href="#certification">Certification</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#blog">Blog</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-            <i class='bx bx-menu' id="menu-icon"></i>
-            <nav class="navbar">
-                <a href="#about" class="active">Home</a>
-                <a href="#education">Education</a>
-                <a href="#certification">Certification</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">I'm <span>Ahmed</span></h2>
+        <h3 class="text-animation"><span></span></h3>
+        <p>
+          Passionate AI Developer with expertise in ML, DL, CV, NLP & Chatbot
+          development. Focused on the continuous learning and seeking
+          opportunity to apply AI knowledge and project-driven work. Seeking
+          opportunities to apply AI knowledge and contribute to advancements in
+          the field.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/muhammad-ahmed-a3a1a1226/"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://github.com/Aplha-pro"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.instagram.com/m_ahmed1.0/"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+        </div>
 
-        <section class="about" id="about">
-            <div class="about-content">
-                <h2 class="heading">I'm <span>Ahmed</span></h2>
-                <h3 class="text-animation"><span></span></h3>
-                <p>Passionate AI Developer with expertise in ML, DL, CV, NLP & Chatbot development. 
-                    Focused on the continuous learning and seeking opportunity to apply AI knowledge 
-                    and project-driven work. Seeking opportunities to apply AI knowledge and contribute 
-                    to advancements in the field.
-                </p>
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/muhammad-ahmed-a3a1a1226/"><i class='bx bxl-linkedin-square' ></i></a>
-                    <a href="https://github.com/Aplha-pro"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.instagram.com/m_ahmed1.0/"><i class='bx bxl-instagram' ></i></a>
-                </div>
+        <a
+          href="./resources/documents/Muhammad Ahmed CV.pdf"
+          class="btn"
+          download
+          >Download CV</a
+        >
+      </div>
 
-                <a href="./resources/documents/Muhammad Ahmed CV.pdf" class="btn" download>Download CV</a>
-            </div>
-
-            <div class="about-img">
-                <img src="./resources/images/Untitled design (1).png" alt="" height="300px" width="300px">
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="education" id="education">
-            <br><br><h2 class="heading">Education</h2><br><br><br><br><br>
-            <div class="education-container">
-                <div class="education-box">
-                    <h3>Bachelors of Science in Artificial Intelligence</h3>
-                    <p>University of Management and Technology</p>
-                    <p>10/2021 - Present, Lahore, Pakistan</p>
-                    <p>GPA: 3.64 / 4.00</p>
-                </div>
-                <div class="education-box">
-                    <h3>Faculty in Science</h3>
-                    <p>Pakistan International School Jeddah</p>
-                    <p>03/2019 - 03/2021, Jeddah, Saudi Arabia</p>
-                    <p>Marks: 886 / 1100</p>
-                </div>
-                <div class="education-box">
-                    <h3>Matriculation</h3>
-                    <p>Pakistan International School Jeddah</p>
-                    <p>05/2017 - 03/2019, Jeddah, Saudi Arabia</p>
-                    <p>Marks: 705 / 1100</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certification Section -->
-        <section class="certification" id="certification">
-            <h2 class="heading">Certifications</h2>
-            <div class="certification-container">
-                <div class="certification-box">
-                    <a href="./resources/certificates/OpenCV Certification.jpg">OpenCV Bootcamp</a>
-                </div>
-                <div class="certification-box">
-                    <a href="./resources/certificates/ML Speacialization Certificate.pdf">Machine Learning Specialization</a>
-                </div>
-                <div class="certification-box">
-                    <a href="./resources/certificates/Programming in Python(Meta).pdf">Programming in Python</a>
-                </div>
-                <div class="certification-box">
-                    <a href="./resources/certificates/Generative Ai for Everyone Certificate.pdf">Generative AI for Everyone</a>
-                </div>
-                <div class="certification-box">
-                    <a href="./resources/certificates/Version Control Certificate.pdf">Version Control</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills" id="skills">
-            <h2 class="heading">Skills</h2>
-            <div class="skills-container">
-                <div class="skills-box">
-                    <p>Python</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Problem Solving</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Machine Learning</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Deep Learning</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Computer Vision</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>OpenCV</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>ChatBot Dev</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>NLP</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>TensorFlow</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Image Processing</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>Neo4j</p>
-                </div>
-
-                <div class="skills-box">
-                    <p>GitHub</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects" id="projects">
-            <h2 class="heading">Projects</h2>
-
-            <div class="projects-container">
-
-                <div class="project-box">
-                        <div class="project-info">
-                            <h4>AI Mouse Using Hand Gesture</h4>
-                            <p>This Virtual Mouse allows users to control their computer cursor using hand gestures detected through a webcam. Leveraging OpenCV for 
-                               real-time image processing, Mediapipe for hand tracking, and PyAutoGUI for simulating mouse actions, 
-                               the system provides a touchless, hygienic, and accessible alternative to traditional input devices.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="project-box">
-                    <div class="project-info">
-                        <h4>Voice Controlled Home System</h4>
-                        <p>This project develops a Voice Controlled Smart Home System using 
-                           the ESP-32 microcontroller and 4 relay modules to automate home appliances.
-                           User voice commands are converted to text via Speech-to-Text (STT) technology, 
-                           matched against AIML patterns to determine actions, and executed by triggering relays 
-                           to turn devices on or off.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-info">
-                        <h4>IELTS Band Assessment Tool</h4>
-                        <p>We are developing an NLP-based tool for individuals preparing for the IELTS test. This tool includes 
-                            reading, listening, writing, and speaking tests. Users can take a practice test, which we then evaluate 
-                            to provide an estimated IELTS band score. This helps users understand their current proficiency level 
-                            and identify areas for improvement.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-info">
-                        <h4>Pakistan-24 Election Prediction</h4>
-                        <p>As the political landscape in Pakistan moves toward the 2024 general elections, different 
-                            phases have been highlighted using a systematic, data-driven approach. This revolutionary 
-                            approach combines historical data analysis with advanced modeling techniques and semantic 
-                            extraction from various sources to provide in-depth insights into electoral Trends.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-info">
-                        <h4>COVID-19 Diagnose</h4>
-                        <p>
-                            A Convolutional Neural Network (CNN) for diagnosing COVID-19 using a dataset of chest X-ray images. The CNN model is built 
-                            using the Keras library with a TensorFlow backend and this is further advanced by using Transfer learning. To make it work 
-                            ideal we implement Grid Search Cross Validation.
-                        </p>
-                    </div>
-                </div>
-                <div class="project-box">
-                    <div class="project-info">
-                        <h4>AI Chatbot with Neo4j</h4>
-                        <p> The Chatbot with Neo4j Graph Database project demonstrates the integration of a conversational AI chatbot with a Neo4j graph database. 
-                            By combining AIML, NLP techniques, and a powerful graph database, the project provides a personalized and context-aware conversational 
-                            experience. The project shows graph databases for storing and querying relationships between users, 
-                            enabling the chatbot to provide more meaningful responses.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
+      <div class="about-img">
+        <img
+          src="./resources/images/Untitled design (1).png"
+          alt=""
+          height="300px"
+          width="300px"
+        />
+      </div>
     </section>
 
-        <!-- Contact Section -->
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact Me</h2>
-            <div class="contact-container">
-                <form action="your-form-handler-url" method="POST">
-                    <div class="input-box">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="input-box">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </section>
+    <!-- Education Section -->
+    <section class="education" id="education">
+      <br /><br />
+      <h2 class="heading">Education</h2>
+      <br /><br /><br /><br /><br />
+      <div class="education-container">
+        <div class="education-box">
+          <h3>Bachelors of Science in Artificial Intelligence</h3>
+          <p>University of Management and Technology</p>
+          <p>10/2021 - Present, Lahore, Pakistan</p>
+          <p>GPA: 3.64 / 4.00</p>
+        </div>
+        <div class="education-box">
+          <h3>Faculty in Science</h3>
+          <p>Pakistan International School Jeddah</p>
+          <p>03/2019 - 03/2021, Jeddah, Saudi Arabia</p>
+          <p>Marks: 886 / 1100</p>
+        </div>
+        <div class="education-box">
+          <h3>Matriculation</h3>
+          <p>Pakistan International School Jeddah</p>
+          <p>05/2017 - 03/2019, Jeddah, Saudi Arabia</p>
+          <p>Marks: 705 / 1100</p>
+        </div>
+      </div>
+    </section>
 
-        <script src="./main.js"></script>
-    </body>
+    <!-- Certification Section -->
+    <section class="certification" id="certification">
+      <h2 class="heading">Certifications</h2>
+      <div class="certification-container">
+        <div class="certification-box">
+          <a href="./resources/certificates/OpenCV Certification.jpg"
+            >OpenCV Bootcamp</a
+          >
+        </div>
+        <div class="certification-box">
+          <a href="./resources/certificates/ML Speacialization Certificate.pdf"
+            >Machine Learning Specialization</a
+          >
+        </div>
+        <div class="certification-box">
+          <a href="./resources/certificates/Programming in Python(Meta).pdf"
+            >Programming in Python</a
+          >
+        </div>
+        <div class="certification-box">
+          <a
+            href="./resources/certificates/Generative Ai for Everyone Certificate.pdf"
+            >Generative AI for Everyone</a
+          >
+        </div>
+        <div class="certification-box">
+          <a href="./resources/certificates/Version Control Certificate.pdf"
+            >Version Control</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="skills-container">
+        <div class="skills-box">
+          <p>Python</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Problem Solving</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Machine Learning</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Deep Learning</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Computer Vision</p>
+        </div>
+
+        <div class="skills-box">
+          <p>OpenCV</p>
+        </div>
+
+        <div class="skills-box">
+          <p>ChatBot Dev</p>
+        </div>
+
+        <div class="skills-box">
+          <p>NLP</p>
+        </div>
+
+        <div class="skills-box">
+          <p>TensorFlow</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Image Processing</p>
+        </div>
+
+        <div class="skills-box">
+          <p>Neo4j</p>
+        </div>
+
+        <div class="skills-box">
+          <p>GitHub</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-container">
+        <div class="project-box">
+          <div class="project-info">
+            <h4>AI Mouse Using Hand Gesture</h4>
+            <p>
+              This Virtual Mouse allows users to control their computer cursor
+              using hand gestures detected through a webcam. Leveraging OpenCV
+              for real-time image processing, Mediapipe for hand tracking, and
+              PyAutoGUI for simulating mouse actions, the system provides a
+              touchless, hygienic, and accessible alternative to traditional
+              input devices.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Voice Controlled Home System</h4>
+            <p>
+              This project develops a Voice Controlled Smart Home System using
+              the ESP-32 microcontroller and 4 relay modules to automate home
+              appliances. User voice commands are converted to text via
+              Speech-to-Text (STT) technology, matched against AIML patterns to
+              determine actions, and executed by triggering relays to turn
+              devices on or off.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>IELTS Band Assessment Tool</h4>
+            <p>
+              We are developing an NLP-based tool for individuals preparing for
+              the IELTS test. This tool includes reading, listening, writing,
+              and speaking tests. Users can take a practice test, which we then
+              evaluate to provide an estimated IELTS band score. This helps
+              users understand their current proficiency level and identify
+              areas for improvement.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Pakistan-24 Election Prediction</h4>
+            <p>
+              As the political landscape in Pakistan moves toward the 2024
+              general elections, different phases have been highlighted using a
+              systematic, data-driven approach. This revolutionary approach
+              combines historical data analysis with advanced modeling
+              techniques and semantic extraction from various sources to provide
+              in-depth insights into electoral Trends.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>COVID-19 Diagnose</h4>
+            <p>
+              A Convolutional Neural Network (CNN) for diagnosing COVID-19 using
+              a dataset of chest X-ray images. The CNN model is built using the
+              Keras library with a TensorFlow backend and this is further
+              advanced by using Transfer learning. To make it work ideal we
+              implement Grid Search Cross Validation.
+            </p>
+          </div>
+        </div>
+        <div class="project-box">
+          <div class="project-info">
+            <h4>AI Chatbot with Neo4j</h4>
+            <p>
+              The Chatbot with Neo4j Graph Database project demonstrates the
+              integration of a conversational AI chatbot with a Neo4j graph
+              database. By combining AIML, NLP techniques, and a powerful graph
+              database, the project provides a personalized and context-aware
+              conversational experience. The project shows graph databases for
+              storing and querying relationships between users, enabling the
+              chatbot to provide more meaningful responses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <h2 class="heading">Blogs</h2>
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-box">
+                <h3>Understanding AI Ethics</h3>
+                <a href="blog1.html" class="btn">Read More</a>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="blog-box">
+                <h3>How NLP is Changing Chatbots</h3>
+                <a href="blog2.html" class="btn">Read More</a>
+            </div>
+            <!-- Blog Post 3 -->
+            <div class="blog-box">
+                <h3>Computer Vision in Action</h3>
+                <a href="blog3.html" class="btn">Read More</a>
+            </div>
+            <!-- Hidden Blogs -->
+            <div class="blog-hidden">
+                <!-- Add more blogs here -->
+            </div>
+        </div>
+        <button id="show-more-btn" class="btn">Show More</button>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact Me</h2>
+      <div class="contact-container">
+        <form action="your-form-handler-url" method="POST">
+          <div class="input-box">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="input-box">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="input-box">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="input-box">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
 </html>

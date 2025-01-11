@@ -647,3 +647,56 @@ button.btn {
 button.btn:hover {
     background-color: var(--light-main-color);
 }
+
+.blog {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 5rem 9%;
+    text-align: center;
+}
+
+.blog h2 {
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.blog-box {
+    background-color: var(--second-bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.blog-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(241, 196, 15, 0.5);
+}
+
+.blog-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--main-color);
+}
+
+.blog-box p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.blog-hidden {
+    display: none;
+}
+
+#show-more-btn {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+}
