@@ -64,26 +64,29 @@
             </ul>
             <img src="../resources/images/blog2-img4.png" alt="SVM Diagram" class="blog-image">
             <h3>Simple Python Example</h3>
-            <p class="code">
+            <div class="code-box">
                 <pre>
-from sklearn import datasets
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score
+            <code>
+            from sklearn import datasets
+            from sklearn.model_selection import train_test_split
+            from sklearn.svm import SVC
+            from sklearn.metrics import accuracy_score
 
-# Load dataset
-iris = datasets.load_iris()
-X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3)
+            # Load dataset
+            iris = datasets.load_iris()
+            X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3)
 
-# Train SVM model
-svm = SVC(kernel='linear')
-svm.fit(X_train, y_train)
-y_pred = svm.predict(X_test)
+            # Train SVM model
+            svm = SVC(kernel='linear')
+            svm.fit(X_train, y_train)
+            y_pred = svm.predict(X_test)
 
-# Evaluate
-print("Accuracy:", accuracy_score(y_test, y_pred))
+            # Evaluate
+            print("Accuracy:", accuracy_score(y_test, y_pred))
+            </code>
                 </pre>
-            </p>
+            </div>
+
 
             <h3>Conclusion</h3>
             <p>
