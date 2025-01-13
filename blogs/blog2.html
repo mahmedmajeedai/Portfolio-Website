@@ -1,3 +1,101 @@
-<html>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Support Vector Machines (SVM)</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Muhammad<span>Ahmed</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+        </nav>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="blog" id="blog">
+        <h2 class="heading">Understanding Support Vector Machines (SVM)</h2>
+        <div class="blog-content">
+            <p>
+                Support Vector Machines (SVM) are a powerful and versatile supervised learning algorithm used for classification, regression, and even outlier detection. SVM works by finding the optimal hyperplane that separates data points into classes, making it highly effective for both linearly separable and non-linear datasets.
+            </p>
+
+            <h3>What is an SVM?</h3>
+            <ul>
+                <li><strong>Hyperplane:</strong> The decision boundary that separates different classes.</li>
+                <li><strong>Margin:</strong> The distance between the hyperplane and the nearest data points.</li>
+                <li><strong>Support Vectors:</strong> The closest data points to the hyperplane, defining its position.</li>
+            </ul>
+
+            <h3>How Does SVM Work?</h3>
+            <ul>
+                <li><strong>Linear SVM:</strong> Identifies a straight hyperplane for linearly separable data.</li>
+                <li><strong>Non-linear SVM:</strong> Uses the kernel trick to project data into higher-dimensional spaces for separation.</li>
+            </ul>
+
+            <h3>Key Features of SVM</h3>
+            <ul>
+                <li><strong>Kernel Function:</strong> Transform data for non-linear separation.</li>
+                <li><strong>Effective in High Dimensions:</strong> Handles datasets with many features effectively.</li>
+                <li><strong>Robust to Overfitting:</strong> Especially in high-dimensional spaces.</li>
+            </ul>
+
+            <h3>Applications of SVM</h3>
+            <ul>
+                <li><strong>Image Recognition:</strong> Face detection and object classification.</li>
+                <li><strong>Text Classification:</strong> Sentiment analysis and spam detection.</li>
+                <li><strong>Bioinformatics:</strong> Gene classification and protein structure analysis.</li>
+            </ul>
+
+            <h3>Advantages of SVM</h3>
+            <ul>
+                <li>Handles high-dimensional data effectively.</li>
+                <li>Works well for both linear and non-linear problems.</li>
+                <li>Robust against overfitting, especially for small datasets.</li>
+            </ul>
+
+            <h3>Limitations of SVM</h3>
+            <ul>
+                <li>Computationally intensive for large datasets.</li>
+                <li>Sensitive to parameter tuning.</li>
+                <li>Less effective when classes are heavily overlapping.</li>
+            </ul>
+
+            <h3>Simple Python Example</h3>
+            <p class="code">
+                <pre>
+from sklearn import datasets
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+
+# Load dataset
+iris = datasets.load_iris()
+X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.3)
+
+# Train SVM model
+svm = SVC(kernel='linear')
+svm.fit(X_train, y_train)
+y_pred = svm.predict(X_test)
+
+# Evaluate
+print("Accuracy:", accuracy_score(y_test, y_pred))
+                </pre>
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+                SVM is a robust and versatile machine learning algorithm suitable for various applications. While it has some limitations, its ability to handle high-dimensional data and adapt to non-linear problems through kernel functions makes it a valuable tool in any machine learning practitioner's toolkit.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Muhammad Ahmed. All Rights Reserved.</p>
+    </footer>
+</body>
 </html>
