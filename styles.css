@@ -827,3 +827,11 @@ button.btn:hover {
     color: var(--text-color);
     padding: 2rem 0;
 }
+.code-box {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-family: monospace;
+    overflow-x: auto;
+}
