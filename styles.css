@@ -835,3 +835,6 @@ button.btn:hover {
     font-family: monospace;
     overflow-x: auto;
 }
+.hidden-blogs {
+    display: none;
+}
